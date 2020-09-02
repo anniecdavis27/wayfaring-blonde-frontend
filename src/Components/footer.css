@@ -1,6 +1,52 @@
 .Foot {
     width: 100%;
-    height: 150px;
+    background-color: #000000;
     border-top: 1px solid black;
     margin-top: 50px;
+    color: rgb(255, 254, 245);
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+}
+
+.annie-pic {
+    width: 250px;
+    border: 10px solid rgb(255, 254, 245);
+    /* border-radius: 360px; */
+    padding: 0px 0px;
+    margin-top: 50px;
+}
+
+.footer-text {
+    margin: 50px;
+}
+
+.copyright {
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.copy-p {
+    margin-block-end: 0em;
+}
+
+@media (orientation: landscape) {
+    .footer-content {
+        flex-direction: row;
+        padding-bottom: 75px;
+        border-bottom: 2px solid rgb(255, 254, 245);
+    }
+    .annie-pic {
+        width: 350px;
+    }
+
+    .copyright {
+        margin-top: 75px;
+    }
 }
